@@ -25,9 +25,9 @@ namespace CSF1Homework
                     case "ferinheit":
                         Console.WriteLine("Please enter a temperature in celsius");
                         string temp = Console.ReadLine();
-                        int cel = int.Parse(temp);
+                        double cel = double.Parse(temp);
 
-                        int far = cel * 9 / 5 + 32;
+                        double far = cel * (9.0 / 5.0 )+ 32;
                         Console.WriteLine($"That is {far} in ferinheit");
 
                         Console.WriteLine("Would you like another? Y/N");
@@ -53,8 +53,8 @@ namespace CSF1Homework
                     case "celsius":
                         Console.WriteLine("Enter a temperature in ferinheit.");
                         string newTemp = Console.ReadLine();
-                        int newFar = int.Parse(newTemp);
-                        int newCel = (newFar - 32) / 9 * 5;
+                        double newFar = double.Parse(newTemp);
+                        double newCel = (newFar - 32) / (9 / 5);
                         Console.WriteLine($"That's {newCel} in celsius");
 
                         Console.WriteLine("Would you like another? Y/N");
